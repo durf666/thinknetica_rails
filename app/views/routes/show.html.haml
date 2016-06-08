@@ -1,0 +1,6 @@
+%p#notice= notice
+%p
+  %strong Name:
+  = @route.name
+= link_to 'Редактировать', edit_route_path(@route)
+= link_to 'Назад', routes_path
