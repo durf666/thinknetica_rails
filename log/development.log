@@ -2148,3 +2148,198 @@ SyntaxError (/media/ticketer/app/controllers/routes_controller.rb:2: syntax erro
   Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
   Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
   Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (24.1ms)
+
+
+Started GET "/" for 172.24.32.183 at 2016-06-08 15:50:14 +0300
+Cannot render console from 172.24.32.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (2.3ms)
+Completed 200 OK in 216ms (Views: 198.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/routes" for 172.24.32.183 at 2016-06-08 15:50:20 +0300
+Cannot render console from 172.24.32.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+SyntaxError (/media/ticketer_1/app/controllers/routes_controller.rb:2: syntax error, unexpected [, expecting keyword_do or '{' or '('
+  before_action :set_train, only [:show, :edit, :update, :destroy]
+                                  ^):
+  app/controllers/routes_controller.rb:2: syntax error, unexpected [, expecting keyword_do or '{' or '('
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (22.5ms)
+
+
+Started GET "/routes" for 172.24.32.183 at 2016-06-08 15:50:49 +0300
+Cannot render console from 172.24.32.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+SyntaxError (/media/ticketer_1/app/controllers/routes_controller.rb:2: syntax error, unexpected [, expecting keyword_do or '{' or '('
+  before_action :set_train, only [:show, :edit, :update, :destroy]
+                                  ^):
+  app/controllers/routes_controller.rb:2: syntax error, unexpected [, expecting keyword_do or '{' or '('
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (47.8ms)
+
+
+Started GET "/routes" for 172.24.32.183 at 2016-06-08 15:50:52 +0300
+Cannot render console from 172.24.32.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+SyntaxError (/media/ticketer_1/app/controllers/routes_controller.rb:2: syntax error, unexpected [, expecting keyword_do or '{' or '('
+  before_action :set_train, only [:show, :edit, :update, :destroy]
+                                  ^):
+  app/controllers/routes_controller.rb:2: syntax error, unexpected [, expecting keyword_do or '{' or '('
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (29.0ms)
+
+
+Started GET "/routes" for 172.24.32.183 at 2016-06-08 15:50:58 +0300
+Cannot render console from 172.24.32.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+SyntaxError (/media/ticketer_1/app/controllers/routes_controller.rb:2: syntax error, unexpected [, expecting keyword_do or '{' or '('
+  before_action :set_train, only [:show, :edit, :update, :destroy]
+                                  ^):
+  app/controllers/routes_controller.rb:2: syntax error, unexpected [, expecting keyword_do or '{' or '('
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (40.7ms)
+
+
+Started GET "/routes" for 172.24.32.183 at 2016-06-08 15:51:39 +0300
+Cannot render console from 172.24.32.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (undefined local variable or method `only' for RoutesController:Class):
+  app/controllers/routes_controller.rb:2:in `<class:RoutesController>'
+  app/controllers/routes_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (41.6ms)
+
+
+Started GET "/routes" for 172.24.32.183 at 2016-06-08 15:51:41 +0300
+Cannot render console from 172.24.32.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (undefined local variable or method `only' for RoutesController:Class):
+  app/controllers/routes_controller.rb:2:in `<class:RoutesController>'
+  app/controllers/routes_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (78.0ms)
+
+
+Started GET "/routes" for 172.24.32.183 at 2016-06-08 15:52:10 +0300
+Cannot render console from 172.24.32.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RoutesController#index as HTML
+  [1m[35mRoute Load (0.5ms)[0m  SELECT "routes".* FROM "routes"
+  Rendered routes/index.html.haml within layouts/application (10.7ms)
+Completed 200 OK in 34ms (Views: 31.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 172.24.32.183 at 2016-06-08 15:53:01 +0300
+Cannot render console from 172.24.32.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (3.3ms)
+Completed 200 OK in 43ms (Views: 42.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/routes" for 172.24.32.183 at 2016-06-08 15:53:03 +0300
+Cannot render console from 172.24.32.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RoutesController#index as HTML
+  [1m[36mRoute Load (0.4ms)[0m  [1mSELECT "routes".* FROM "routes"[0m
+  Rendered routes/index.html.haml within layouts/application (9.5ms)
+Completed 200 OK in 52ms (Views: 50.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/routes/4" for 172.24.32.183 at 2016-06-08 15:53:06 +0300
+Cannot render console from 172.24.32.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RoutesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mRoute Load (0.3ms)[0m  SELECT  "routes".* FROM "routes" WHERE "routes"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered routes/show.html.haml within layouts/application (1.9ms)
+Completed 200 OK in 29ms (Views: 21.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/routes/4/edit" for 172.24.32.183 at 2016-06-08 15:53:07 +0300
+Cannot render console from 172.24.32.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RoutesController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mRoute Load (0.2ms)[0m  [1mSELECT  "routes".* FROM "routes" WHERE "routes"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered routes/_form.html.haml (18.7ms)
+  Rendered routes/edit.html.haml within layouts/application (22.0ms)
+Completed 200 OK in 51ms (Views: 48.2ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/routes/4" for 172.24.32.183 at 2016-06-08 15:53:09 +0300
+Cannot render console from 172.24.32.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RoutesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fbL+E74ChP2wIm+5ZMxfq9yY7OT8pb05srH2Ni4Umf1sN/yq/HSDOLbUYWtK1cw2w/2P2Wb0tj6W+DGGm3+IIg==", "route"=>{"name"=>"gbgbgb"}, "commit"=>"Update Route", "id"=>"4"}
+  [1m[35mRoute Load (0.1ms)[0m  SELECT  "routes".* FROM "routes" WHERE "routes"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  UPDATE "routes" SET "name" = ?, "updated_at" = ? WHERE "routes"."id" = ?  [["name", "gbgbgb"], ["updated_at", "2016-06-08 12:53:09.448725"], ["id", 4]]
+  [1m[36m (4.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://172.24.32.194:3000/routes/4
+Completed 302 Found in 10ms (ActiveRecord: 5.1ms)
+
+
+Started GET "/routes/4" for 172.24.32.183 at 2016-06-08 15:53:09 +0300
+Cannot render console from 172.24.32.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RoutesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mRoute Load (0.2ms)[0m  SELECT  "routes".* FROM "routes" WHERE "routes"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered routes/show.html.haml within layouts/application (15.6ms)
+Completed 200 OK in 54ms (Views: 51.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/routes" for 172.24.32.183 at 2016-06-08 15:53:10 +0300
+Cannot render console from 172.24.32.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RoutesController#index as HTML
+  [1m[36mRoute Load (0.2ms)[0m  [1mSELECT "routes".* FROM "routes"[0m
+  Rendered routes/index.html.haml within layouts/application (1.9ms)
+Completed 200 OK in 29ms (Views: 28.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/routes/4/edit" for 172.24.32.183 at 2016-06-08 15:53:12 +0300
+Cannot render console from 172.24.32.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RoutesController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mRoute Load (0.1ms)[0m  SELECT  "routes".* FROM "routes" WHERE "routes"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered routes/_form.html.haml (1.7ms)
+  Rendered routes/edit.html.haml within layouts/application (2.7ms)
+Completed 200 OK in 22ms (Views: 21.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/routes" for 172.24.32.183 at 2016-06-08 15:53:13 +0300
+Cannot render console from 172.24.32.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RoutesController#index as HTML
+  [1m[36mRoute Load (0.3ms)[0m  [1mSELECT "routes".* FROM "routes"[0m
+  Rendered routes/index.html.haml within layouts/application (3.7ms)
+Completed 200 OK in 42ms (Views: 40.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/routes/new" for 172.24.32.183 at 2016-06-08 15:53:16 +0300
+Cannot render console from 172.24.32.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RoutesController#new as HTML
+  Rendered routes/_form.html.haml (2.9ms)
+  Rendered routes/new.html.haml within layouts/application (6.2ms)
+Completed 200 OK in 45ms (Views: 44.1ms | ActiveRecord: 0.0ms)

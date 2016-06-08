@@ -1,5 +1,5 @@
 class RoutesController < ApplicationController
-  before_action :set_train, only [:show, :edit, :update, :destroy]
+  before_action :set_train, only: [:show, :edit, :update, :destroy]
 
   def index
     @routes = Route.all
