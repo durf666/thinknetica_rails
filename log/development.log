@@ -2343,3 +2343,800 @@ Processing by RoutesController#new as HTML
   Rendered routes/_form.html.haml (2.9ms)
   Rendered routes/new.html.haml within layouts/application (6.2ms)
 Completed 200 OK in 45ms (Views: 44.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 172.24.32.183 at 2016-06-08 15:56:03 +0300
+Cannot render console from 172.24.32.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (0.9ms)
+Completed 200 OK in 42ms (Views: 40.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/railway_stations" for 172.24.32.183 at 2016-06-08 15:56:09 +0300
+Cannot render console from 172.24.32.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RailwayStationsController#index as HTML
+  [1m[35mRailwayStation Load (0.4ms)[0m  SELECT "railway_stations".* FROM "railway_stations"
+  Rendered railway_stations/index.html.haml within layouts/application (8.1ms)
+Completed 200 OK in 54ms (Views: 49.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/railway_stations/new" for 172.24.32.183 at 2016-06-08 15:56:11 +0300
+Cannot render console from 172.24.32.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RailwayStationsController#new as HTML
+  Rendered railway_stations/_form.html.erb (5.4ms)
+  Rendered railway_stations/new.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 51ms (Views: 44.3ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/railway_stations" for 172.24.32.183 at 2016-06-08 15:56:13 +0300
+Cannot render console from 172.24.32.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RailwayStationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QQD0VMvutamKKjzg3psGnQ/97VHCy9FhNjAEabf2bwRQhfbtiZiybIzcMjLwgpUAEJiObFia2mYSecPZAp1+2w==", "railway_station"=>{"name"=>"dfddf"}, "commit"=>"Create Railway station"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "railway_stations" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "dfddf"], ["created_at", "2016-06-08 12:56:13.470039"], ["updated_at", "2016-06-08 12:56:13.470039"]]
+  [1m[36m (4.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://172.24.32.194:3000/railway_stations/1
+Completed 302 Found in 11ms (ActiveRecord: 5.6ms)
+
+
+Started GET "/railway_stations/1" for 172.24.32.183 at 2016-06-08 15:56:13 +0300
+Cannot render console from 172.24.32.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RailwayStationsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mRailwayStation Load (0.3ms)[0m  SELECT  "railway_stations".* FROM "railway_stations" WHERE "railway_stations"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered railway_stations/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 51ms (Views: 49.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/railway_stations" for 172.24.32.183 at 2016-06-08 15:56:15 +0300
+Cannot render console from 172.24.32.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RailwayStationsController#index as HTML
+  [1m[36mRailwayStation Load (0.3ms)[0m  [1mSELECT "railway_stations".* FROM "railway_stations"[0m
+  Rendered railway_stations/index.html.haml within layouts/application (2.5ms)
+Completed 200 OK in 42ms (Views: 40.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 172.24.32.183 at 2016-06-08 15:56:26 +0300
+Cannot render console from 172.24.32.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (0.7ms)
+Completed 200 OK in 40ms (Views: 38.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/routes" for 172.24.32.183 at 2016-06-08 15:56:27 +0300
+Cannot render console from 172.24.32.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RoutesController#index as HTML
+  [1m[35mRoute Load (0.3ms)[0m  SELECT "routes".* FROM "routes"
+  Rendered routes/index.html.haml within layouts/application (3.5ms)
+Completed 200 OK in 42ms (Views: 41.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/routes/new" for 172.24.32.183 at 2016-06-08 15:56:29 +0300
+Cannot render console from 172.24.32.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RoutesController#new as HTML
+  Rendered routes/_form.html.haml (2.9ms)
+  Rendered routes/new.html.haml within layouts/application (4.5ms)
+Completed 200 OK in 42ms (Views: 40.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/routes" for 172.24.32.183 at 2016-06-08 15:56:31 +0300
+Cannot render console from 172.24.32.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RoutesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8Dh9LXL8pQk8/+tJH80mfZM9FsyxHybJn7R+QNi5pwLhvX+UMIqizDoJ5Zsx1LXgjFh18StOLc67/bnwbdK23Q==", "route"=>{"name"=>";ll;l;"}, "commit"=>"Create Route"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "routes" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", ";ll;l;"], ["created_at", "2016-06-08 12:56:31.719039"], ["updated_at", "2016-06-08 12:56:31.719039"]]
+  [1m[36m (4.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://172.24.32.194:3000/routes/5
+Completed 302 Found in 11ms (ActiveRecord: 5.4ms)
+
+
+Started GET "/routes/5" for 172.24.32.183 at 2016-06-08 15:56:31 +0300
+Cannot render console from 172.24.32.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RoutesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mRoute Load (0.1ms)[0m  SELECT  "routes".* FROM "routes" WHERE "routes"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered routes/show.html.haml within layouts/application (0.7ms)
+Completed 200 OK in 39ms (Views: 37.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/routes" for 172.24.32.183 at 2016-06-08 15:56:33 +0300
+Cannot render console from 172.24.32.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RoutesController#index as HTML
+  [1m[36mRoute Load (0.3ms)[0m  [1mSELECT "routes".* FROM "routes"[0m
+  Rendered routes/index.html.haml within layouts/application (4.0ms)
+Completed 200 OK in 42ms (Views: 41.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/routes/new" for 172.24.32.183 at 2016-06-08 15:56:36 +0300
+Cannot render console from 172.24.32.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RoutesController#new as HTML
+  Rendered routes/_form.html.haml (3.6ms)
+  Rendered routes/new.html.haml within layouts/application (5.3ms)
+Completed 200 OK in 45ms (Views: 43.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/routes" for 172.24.32.183 at 2016-06-08 15:56:37 +0300
+Cannot render console from 172.24.32.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RoutesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BLD7p61x4LxCdmb8ocMI53YvSZfvn5hbLwuCyVL3ejQVNfke7wfneUSAaC6P2pt6aUoqqnXOk1wLQkV555xr6w==", "route"=>{"name"=>""}, "commit"=>"Create Route"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered routes/_form.html.haml (9.4ms)
+  Rendered routes/new.html.haml within layouts/application (13.0ms)
+Completed 200 OK in 53ms (Views: 47.7ms | ActiveRecord: 0.2ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddRailwayStationIdToTrains (20160609120113)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "trains" ADD "railway_stations_id" integer[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160609120113"]]
+  [1m[36m (4.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mRailwayStation Load (0.1ms)[0m  [1mSELECT  "railway_stations".* FROM "railway_stations"  ORDER BY "railway_stations"."id" ASC LIMIT 1[0m
+
+
+Started GET "/routes" for 172.24.32.183 at 2016-06-09 15:17:02 +0300
+Cannot render console from 172.24.32.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Processing by RoutesController#index as HTML
+  [1m[36mRoute Load (0.3ms)[0m  [1mSELECT "routes".* FROM "routes"[0m
+  Rendered routes/index.html.haml within layouts/application (13.3ms)
+Completed 200 OK in 62ms (Views: 56.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/trains.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 172.24.32.183 at 2016-06-09 15:17:03 +0300
+Cannot render console from 172.24.32.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 172.24.32.183 at 2016-06-09 15:17:03 +0300
+Cannot render console from 172.24.32.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 172.24.32.183 at 2016-06-09 15:17:03 +0300
+Cannot render console from 172.24.32.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/railway_stations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 172.24.32.183 at 2016-06-09 15:17:03 +0300
+Cannot render console from 172.24.32.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/scaffolds.self-11e011b645aab77961a8043528f71e44448997ebc5f6d71eb395c5f44ede719b.css?body=1" for 172.24.32.183 at 2016-06-09 15:17:03 +0300
+Cannot render console from 172.24.32.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 172.24.32.183 at 2016-06-09 15:17:03 +0300
+Cannot render console from 172.24.32.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 172.24.32.183 at 2016-06-09 15:17:03 +0300
+Cannot render console from 172.24.32.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/railway_stations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 172.24.32.183 at 2016-06-09 15:17:03 +0300
+Cannot render console from 172.24.32.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 172.24.32.183 at 2016-06-09 15:17:03 +0300
+Cannot render console from 172.24.32.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/trains.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 172.24.32.183 at 2016-06-09 15:17:03 +0300
+Cannot render console from 172.24.32.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 172.24.32.183 at 2016-06-09 15:17:03 +0300
+Cannot render console from 172.24.32.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 172.24.32.183 at 2016-06-09 15:17:03 +0300
+Cannot render console from 172.24.32.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started DELETE "/routes/1" for 172.24.32.183 at 2016-06-09 15:17:06 +0300
+Cannot render console from 172.24.32.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RoutesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"bOst4uObvDuJT5sgnR18gA/g7e17+9QbZUFSzQv+8/l5e2HOQRufJRF7z7sDmoldBUgkHN6HFg/Zkv+IOr/l1A==", "id"=>"1"}
+  [1m[35mRoute Load (0.4ms)[0m  SELECT  "routes".* FROM "routes" WHERE "routes"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "routes" WHERE "routes"."id" = ?  [["id", 1]]
+  [1m[36m (4.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://172.24.32.194:3000/routes
+Completed 302 Found in 11ms (ActiveRecord: 5.7ms)
+
+
+Started GET "/routes" for 172.24.32.183 at 2016-06-09 15:17:06 +0300
+Cannot render console from 172.24.32.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RoutesController#index as HTML
+  [1m[35mRoute Load (0.2ms)[0m  SELECT "routes".* FROM "routes"
+  Rendered routes/index.html.haml within layouts/application (3.6ms)
+Completed 200 OK in 59ms (Views: 57.7ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/routes/2" for 172.24.32.183 at 2016-06-09 15:17:08 +0300
+Cannot render console from 172.24.32.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RoutesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"PryX3kTBtRhnm2wsPdL0e61T87PvLGvyYrjZTvHTsAArLNvy5kGWBv+vOLejVQGmp/s6QkpQqebea3QLwJKmLQ==", "id"=>"2"}
+  [1m[36mRoute Load (0.2ms)[0m  [1mSELECT  "routes".* FROM "routes" WHERE "routes"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "routes" WHERE "routes"."id" = ?[0m  [["id", 2]]
+  [1m[35m (16.5ms)[0m  commit transaction
+Redirected to http://172.24.32.194:3000/routes
+Completed 302 Found in 21ms (ActiveRecord: 17.0ms)
+
+
+Started GET "/routes" for 172.24.32.183 at 2016-06-09 15:17:08 +0300
+Cannot render console from 172.24.32.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RoutesController#index as HTML
+  [1m[36mRoute Load (0.3ms)[0m  [1mSELECT "routes".* FROM "routes"[0m
+  Rendered routes/index.html.haml within layouts/application (2.7ms)
+Completed 200 OK in 42ms (Views: 40.8ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/routes/4" for 172.24.32.183 at 2016-06-09 15:17:09 +0300
+Cannot render console from 172.24.32.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RoutesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"6cgW3OywaIZabWCyYBmIp1/fbkkUUAamXzQeriewDcz8WFrwTjBLmMJZNCn+nn16VXenuLEsxLLj57PrFvEb4Q==", "id"=>"4"}
+  [1m[35mRoute Load (0.5ms)[0m  SELECT  "routes".* FROM "routes" WHERE "routes"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "routes" WHERE "routes"."id" = ?  [["id", 4]]
+  [1m[36m (4.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://172.24.32.194:3000/routes
+Completed 302 Found in 9ms (ActiveRecord: 5.7ms)
+
+
+Started GET "/routes" for 172.24.32.183 at 2016-06-09 15:17:09 +0300
+Cannot render console from 172.24.32.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RoutesController#index as HTML
+  [1m[35mRoute Load (0.3ms)[0m  SELECT "routes".* FROM "routes"
+  Rendered routes/index.html.haml within layouts/application (2.0ms)
+Completed 200 OK in 42ms (Views: 41.2ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/routes/5" for 172.24.32.183 at 2016-06-09 15:17:11 +0300
+Cannot render console from 172.24.32.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RoutesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"HuFm6ExAEjn3iyQUJ9YMrCQytAxPvQ2pXTRwbfD+CSILcSrE7sAxJ2+/cI+5UflxLpp9/erBz73h590owb8fDw==", "id"=>"5"}
+  [1m[36mRoute Load (0.1ms)[0m  [1mSELECT  "routes".* FROM "routes" WHERE "routes"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "routes" WHERE "routes"."id" = ?[0m  [["id", 5]]
+  [1m[35m (3.2ms)[0m  commit transaction
+Redirected to http://172.24.32.194:3000/routes
+Completed 302 Found in 5ms (ActiveRecord: 3.6ms)
+
+
+Started GET "/routes" for 172.24.32.183 at 2016-06-09 15:17:11 +0300
+Cannot render console from 172.24.32.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RoutesController#index as HTML
+  [1m[36mRoute Load (0.1ms)[0m  [1mSELECT "routes".* FROM "routes"[0m
+  Rendered routes/index.html.haml within layouts/application (0.7ms)
+Completed 200 OK in 18ms (Views: 17.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/routes/new" for 172.24.32.183 at 2016-06-09 15:17:12 +0300
+Cannot render console from 172.24.32.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RoutesController#new as HTML
+  Rendered routes/_form.html.haml (3.1ms)
+  Rendered routes/new.html.haml within layouts/application (4.8ms)
+Completed 200 OK in 45ms (Views: 43.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/routes" for 172.24.32.183 at 2016-06-09 15:17:24 +0300
+Cannot render console from 172.24.32.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RoutesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BK2NZ/xOZcr1/nBOfd1TWJJwiSn8yhmjToDSIAI2pkkRPcFLXs5G1G3KJNXjWqaFmNhA2Fm227fyU39lM3ewZA==", "route"=>{"name"=>"Москва - Ростов"}, "commit"=>"Create Route"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "routes" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Москва - Ростов"], ["created_at", "2016-06-09 12:17:24.284154"], ["updated_at", "2016-06-09 12:17:24.284154"]]
+  [1m[35m (3.8ms)[0m  commit transaction
+Redirected to http://172.24.32.194:3000/routes/6
+Completed 302 Found in 10ms (ActiveRecord: 4.4ms)
+
+
+Started GET "/routes/6" for 172.24.32.183 at 2016-06-09 15:17:24 +0300
+Cannot render console from 172.24.32.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RoutesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mRoute Load (0.2ms)[0m  [1mSELECT  "routes".* FROM "routes" WHERE "routes"."id" = ? LIMIT 1[0m  [["id", 6]]
+  Rendered routes/show.html.haml within layouts/application (0.8ms)
+Completed 200 OK in 41ms (Views: 39.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/routes" for 172.24.32.183 at 2016-06-09 15:17:28 +0300
+Cannot render console from 172.24.32.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RoutesController#index as HTML
+  [1m[35mRoute Load (0.3ms)[0m  SELECT "routes".* FROM "routes"
+  Rendered routes/index.html.haml within layouts/application (2.3ms)
+Completed 200 OK in 42ms (Views: 40.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/routes/new" for 172.24.32.183 at 2016-06-09 15:17:30 +0300
+Cannot render console from 172.24.32.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RoutesController#new as HTML
+  Rendered routes/_form.html.haml (3.0ms)
+  Rendered routes/new.html.haml within layouts/application (4.7ms)
+Completed 200 OK in 46ms (Views: 44.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/routes" for 172.24.32.183 at 2016-06-09 15:17:38 +0300
+Cannot render console from 172.24.32.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RoutesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4XyY/vHKk4iVcjRfHiUUrrBbCobnipIkGDm0m/BqIqr07NTSU0qwlg1GYMSAouFzuvPDd0L2UDCk6hnewSs0hw==", "route"=>{"name"=>"Москва - Питер"}, "commit"=>"Create Route"}
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "routes" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Москва - Питер"], ["created_at", "2016-06-09 12:17:38.685553"], ["updated_at", "2016-06-09 12:17:38.685553"]]
+  [1m[36m (7.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://172.24.32.194:3000/routes/7
+Completed 302 Found in 14ms (ActiveRecord: 8.7ms)
+
+
+Started GET "/routes/7" for 172.24.32.183 at 2016-06-09 15:17:38 +0300
+Cannot render console from 172.24.32.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RoutesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mRoute Load (0.2ms)[0m  SELECT  "routes".* FROM "routes" WHERE "routes"."id" = ? LIMIT 1  [["id", 7]]
+  Rendered routes/show.html.haml within layouts/application (0.9ms)
+Completed 200 OK in 56ms (Views: 54.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/routes" for 172.24.32.183 at 2016-06-09 15:17:39 +0300
+Cannot render console from 172.24.32.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RoutesController#index as HTML
+  [1m[36mRoute Load (0.3ms)[0m  [1mSELECT "routes".* FROM "routes"[0m
+  Rendered routes/index.html.haml within layouts/application (2.8ms)
+Completed 200 OK in 40ms (Views: 38.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 172.24.32.183 at 2016-06-09 15:17:45 +0300
+Cannot render console from 172.24.32.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (0.7ms)
+Completed 200 OK in 39ms (Views: 38.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/railway_stations" for 172.24.32.183 at 2016-06-09 15:17:47 +0300
+Cannot render console from 172.24.32.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RailwayStationsController#index as HTML
+  [1m[35mRailwayStation Load (0.3ms)[0m  SELECT "railway_stations".* FROM "railway_stations"
+  Rendered railway_stations/index.html.haml within layouts/application (8.7ms)
+Completed 200 OK in 56ms (Views: 46.8ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/railway_stations/1" for 172.24.32.183 at 2016-06-09 15:17:50 +0300
+Cannot render console from 172.24.32.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RailwayStationsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"YkOQr/6pa7uBPBcATjYBBzZYByfGhHd+EhyT8BD+Y5l309yDXClIpRkIQ5vQsfTaPPDO1mP4tWquzz61Ib91tA==", "id"=>"1"}
+  [1m[36mRailwayStation Load (0.4ms)[0m  [1mSELECT  "railway_stations".* FROM "railway_stations" WHERE "railway_stations"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM "railway_stations" WHERE "railway_stations"."id" = ?[0m  [["id", 1]]
+  [1m[35m (3.6ms)[0m  commit transaction
+Redirected to http://172.24.32.194:3000/railway_stations
+Completed 302 Found in 9ms (ActiveRecord: 4.5ms)
+
+
+Started GET "/railway_stations" for 172.24.32.183 at 2016-06-09 15:17:50 +0300
+Cannot render console from 172.24.32.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RailwayStationsController#index as HTML
+  [1m[36mRailwayStation Load (0.2ms)[0m  [1mSELECT "railway_stations".* FROM "railway_stations"[0m
+  Rendered railway_stations/index.html.haml within layouts/application (6.3ms)
+Completed 200 OK in 43ms (Views: 41.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/railway_stations/new" for 172.24.32.183 at 2016-06-09 15:17:51 +0300
+Cannot render console from 172.24.32.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RailwayStationsController#new as HTML
+  Rendered railway_stations/_form.html.erb (2.8ms)
+  Rendered railway_stations/new.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 41ms (Views: 40.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/railway_stations" for 172.24.32.183 at 2016-06-09 15:17:57 +0300
+Cannot render console from 172.24.32.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RailwayStationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"j9o+9Zz48vuOeD0A7aMBA+FlnPGOwp7oNVLcqdzZFgqaSnLZPnjR5RZMaZtzJPTe681VACu+XPyJgXHs7ZgAJw==", "railway_station"=>{"name"=>"Москва"}, "commit"=>"Create Railway station"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "railway_stations" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Москва"], ["created_at", "2016-06-09 12:17:57.594084"], ["updated_at", "2016-06-09 12:17:57.594084"]]
+  [1m[35m (4.2ms)[0m  commit transaction
+Redirected to http://172.24.32.194:3000/railway_stations/2
+Completed 302 Found in 11ms (ActiveRecord: 4.9ms)
+
+
+Started GET "/railway_stations/2" for 172.24.32.183 at 2016-06-09 15:17:57 +0300
+Cannot render console from 172.24.32.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RailwayStationsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRailwayStation Load (0.2ms)[0m  [1mSELECT  "railway_stations".* FROM "railway_stations" WHERE "railway_stations"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered railway_stations/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 38ms (Views: 36.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/railway_stations" for 172.24.32.183 at 2016-06-09 15:17:58 +0300
+Cannot render console from 172.24.32.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RailwayStationsController#index as HTML
+  [1m[35mRailwayStation Load (0.3ms)[0m  SELECT "railway_stations".* FROM "railway_stations"
+  Rendered railway_stations/index.html.haml within layouts/application (2.3ms)
+Completed 200 OK in 41ms (Views: 39.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/railway_stations/new" for 172.24.32.183 at 2016-06-09 15:17:59 +0300
+Cannot render console from 172.24.32.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RailwayStationsController#new as HTML
+  Rendered railway_stations/_form.html.erb (2.7ms)
+  Rendered railway_stations/new.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 53ms (Views: 51.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/railway_stations" for 172.24.32.183 at 2016-06-09 15:18:06 +0300
+Cannot render console from 172.24.32.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RailwayStationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SbS39vjalxEvCJdaAHZKJ/t6m1qlXzwv76H4eUgHdvFcJPvaWlq0D7c8w8Ge8b/68dJSqwAj/jtTclU8eUZg3A==", "railway_station"=>{"name"=>"Питер"}, "commit"=>"Create Railway station"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "railway_stations" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Питер"], ["created_at", "2016-06-09 12:18:06.031256"], ["updated_at", "2016-06-09 12:18:06.031256"]]
+  [1m[36m (3.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://172.24.32.194:3000/railway_stations/3
+Completed 302 Found in 6ms (ActiveRecord: 3.3ms)
+
+
+Started GET "/railway_stations/3" for 172.24.32.183 at 2016-06-09 15:18:06 +0300
+Cannot render console from 172.24.32.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RailwayStationsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mRailwayStation Load (0.1ms)[0m  SELECT  "railway_stations".* FROM "railway_stations" WHERE "railway_stations"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered railway_stations/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 19ms (Views: 18.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/railway_stations" for 172.24.32.183 at 2016-06-09 15:18:07 +0300
+Cannot render console from 172.24.32.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RailwayStationsController#index as HTML
+  [1m[36mRailwayStation Load (0.2ms)[0m  [1mSELECT "railway_stations".* FROM "railway_stations"[0m
+  Rendered railway_stations/index.html.haml within layouts/application (1.5ms)
+Completed 200 OK in 19ms (Views: 18.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/railway_stations/new" for 172.24.32.183 at 2016-06-09 15:18:08 +0300
+Cannot render console from 172.24.32.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RailwayStationsController#new as HTML
+  Rendered railway_stations/_form.html.erb (2.3ms)
+  Rendered railway_stations/new.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 36ms (Views: 35.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/railway_stations" for 172.24.32.183 at 2016-06-09 15:18:12 +0300
+Cannot render console from 172.24.32.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RailwayStationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"s9hIWirLP7t5DUabPC+pbnXJyOPF3U1kFtEyRVIWIwKmSAR2iEscpeE5EgCiqFyzf2EBEmChj3CqAp8AY1c1Lw==", "railway_station"=>{"name"=>"Ростов"}, "commit"=>"Create Railway station"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "railway_stations" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Ростов"], ["created_at", "2016-06-09 12:18:12.895739"], ["updated_at", "2016-06-09 12:18:12.895739"]]
+  [1m[35m (4.3ms)[0m  commit transaction
+Redirected to http://172.24.32.194:3000/railway_stations/4
+Completed 302 Found in 10ms (ActiveRecord: 4.8ms)
+
+
+Started GET "/railway_stations/4" for 172.24.32.183 at 2016-06-09 15:18:12 +0300
+Cannot render console from 172.24.32.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RailwayStationsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mRailwayStation Load (0.1ms)[0m  [1mSELECT  "railway_stations".* FROM "railway_stations" WHERE "railway_stations"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered railway_stations/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 38ms (Views: 37.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/railway_stations" for 172.24.32.183 at 2016-06-09 15:18:13 +0300
+Cannot render console from 172.24.32.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RailwayStationsController#index as HTML
+  [1m[35mRailwayStation Load (0.3ms)[0m  SELECT "railway_stations".* FROM "railway_stations"
+  Rendered railway_stations/index.html.haml within layouts/application (3.6ms)
+Completed 200 OK in 42ms (Views: 41.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/railway_stations" for 172.24.32.183 at 2016-06-09 15:18:18 +0300
+Cannot render console from 172.24.32.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RailwayStationsController#index as HTML
+  [1m[36mRailwayStation Load (0.3ms)[0m  [1mSELECT "railway_stations".* FROM "railway_stations"[0m
+  Rendered railway_stations/index.html.haml within layouts/application (3.5ms)
+Completed 200 OK in 43ms (Views: 41.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 172.24.32.183 at 2016-06-09 15:18:21 +0300
+Cannot render console from 172.24.32.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (0.7ms)
+Completed 200 OK in 39ms (Views: 38.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/trains" for 172.24.32.183 at 2016-06-09 15:18:25 +0300
+Cannot render console from 172.24.32.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TrainsController#index as HTML
+  [1m[35mTrain Load (0.3ms)[0m  SELECT "trains".* FROM "trains"
+  Rendered trains/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 63ms (Views: 53.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/trains/new" for 172.24.32.183 at 2016-06-09 15:18:26 +0300
+Cannot render console from 172.24.32.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TrainsController#new as HTML
+  Rendered trains/_form.html.erb (14.1ms)
+  Rendered trains/new.html.erb within layouts/application (15.2ms)
+Completed 200 OK in 45ms (Views: 40.7ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/trains" for 172.24.32.183 at 2016-06-09 15:18:29 +0300
+Cannot render console from 172.24.32.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TrainsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vwz/fU2aF1eSIdztbtu6Sxlu8oQQtd7QsLKEo0mDZfuqnLNR7xo0SQoViHbwXE+WE8Y7dbXJHMQMYSnmeMJz1g==", "train"=>{"number"=>"111"}, "commit"=>"Create Train"}
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "trains" ("number", "created_at", "updated_at") VALUES (?, ?, ?)  [["number", 111], ["created_at", "2016-06-09 12:18:29.145110"], ["updated_at", "2016-06-09 12:18:29.145110"]]
+  [1m[36m (4.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://172.24.32.194:3000/trains/1
+Completed 302 Found in 10ms (ActiveRecord: 4.8ms)
+
+
+Started GET "/trains/1" for 172.24.32.183 at 2016-06-09 15:18:29 +0300
+Cannot render console from 172.24.32.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TrainsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mTrain Load (0.3ms)[0m  SELECT  "trains".* FROM "trains" WHERE "trains"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered trains/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 41ms (Views: 39.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/trains" for 172.24.32.183 at 2016-06-09 15:18:32 +0300
+Cannot render console from 172.24.32.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TrainsController#index as HTML
+  [1m[36mTrain Load (0.3ms)[0m  [1mSELECT "trains".* FROM "trains"[0m
+  Rendered trains/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 39ms (Views: 38.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/trains/new" for 172.24.32.183 at 2016-06-09 15:18:35 +0300
+Cannot render console from 172.24.32.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TrainsController#new as HTML
+  Rendered trains/_form.html.erb (2.5ms)
+  Rendered trains/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 41ms (Views: 40.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/trains" for 172.24.32.183 at 2016-06-09 15:18:38 +0300
+Cannot render console from 172.24.32.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TrainsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tQV0JRRsYvGet+PJKhOaJcRYuq+vb318nB6YFZtcs0SglTgJtuxB7waDt1K0lG/4zvBzXgoTv2ggzTVQqh2laQ==", "train"=>{"number"=>"222"}, "commit"=>"Create Train"}
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "trains" ("number", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["number", 222], ["created_at", "2016-06-09 12:18:38.097367"], ["updated_at", "2016-06-09 12:18:38.097367"]]
+  [1m[35m (4.5ms)[0m  commit transaction
+Redirected to http://172.24.32.194:3000/trains/2
+Completed 302 Found in 11ms (ActiveRecord: 5.2ms)
+
+
+Started GET "/trains/2" for 172.24.32.183 at 2016-06-09 15:18:38 +0300
+Cannot render console from 172.24.32.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TrainsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mTrain Load (0.2ms)[0m  [1mSELECT  "trains".* FROM "trains" WHERE "trains"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered trains/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 39ms (Views: 37.5ms | ActiveRecord: 0.2ms)
+  [1m[35mRailwayStation Load (0.5ms)[0m  SELECT  "railway_stations".* FROM "railway_stations"  ORDER BY "railway_stations"."id" ASC LIMIT 1
+  [1m[36mTrain Load (0.3ms)[0m  [1mSELECT  "trains".* FROM "trains"  ORDER BY "trains"."id" ASC LIMIT 1[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to AddRailwayStationIdToTrains (20160609120113)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TEMPORARY TABLE "atrains" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "number" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "railway_stations_id" integer) 
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "trains"[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "atrains" ("id","number","created_at","updated_at","railway_stations_id") VALUES (1, 111, '2016-06-09 12:18:29.145110', '2016-06-09 12:18:29.145110', NULL)
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "atrains" ("id","number","created_at","updated_at","railway_stations_id") VALUES (2, 222, '2016-06-09 12:18:38.097367', '2016-06-09 12:18:38.097367', NULL)[0m
+  [1m[35m (0.2ms)[0m  DROP TABLE "trains"
+  [1m[36m (0.1ms)[0m  [1mCREATE TABLE "trains" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "number" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "atrains"
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "trains" ("id","number","created_at","updated_at") VALUES (1, 111, '2016-06-09 12:18:29.145110', '2016-06-09 12:18:29.145110')[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "trains" ("id","number","created_at","updated_at") VALUES (2, 222, '2016-06-09 12:18:38.097367', '2016-06-09 12:18:38.097367')
+  [1m[36m (0.2ms)[0m  [1mDROP TABLE "atrains"[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?  [["version", "20160609120113"]]
+  [1m[36m (3.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddRailwayStationIdToTrains (20160609120113)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "trains" ADD "railway_station_id" integer[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160609120113"]]
+  [1m[36m (3.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mTrain Load (0.3ms)[0m  [1mSELECT  "trains".* FROM "trains"  ORDER BY "trains"."id" ASC LIMIT 1[0m
+  [1m[35mRailwayStation Load (0.5ms)[0m  SELECT  "railway_stations".* FROM "railway_stations"  ORDER BY "railway_stations"."id" ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "trains" SET "railway_station_id" = ?, "updated_at" = ? WHERE "trains"."id" = ?  [["railway_station_id", 2], ["updated_at", "2016-06-09 12:21:03.131218"], ["id", 1]]
+  [1m[36m (3.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mTrain Load (0.5ms)[0m  SELECT "trains".* FROM "trains" WHERE "trains"."railway_station_id" = ?  [["railway_station_id", 2]]
+  [1m[36mTrain Load (0.4ms)[0m  [1mSELECT  "trains".* FROM "trains" WHERE "trains"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "trains" ("number", "railway_station_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["number", 333], ["railway_station_id", 3], ["created_at", "2016-06-09 12:24:10.098576"], ["updated_at", "2016-06-09 12:24:10.098576"]]
+  [1m[35m (4.0ms)[0m  commit transaction
+  [1m[36mTrain Load (0.4ms)[0m  [1mSELECT "trains".* FROM "trains" WHERE "trains"."railway_station_id" = ?[0m  [["railway_station_id", 2]]
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "trains" ("number", "railway_station_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["number", 333], ["railway_station_id", 3], ["created_at", "2016-06-09 12:25:31.001850"], ["updated_at", "2016-06-09 12:25:31.001850"]]
+  [1m[35m (3.5ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "trains" SET "railway_station_id" = ?, "updated_at" = ? WHERE "trains"."id" = ?  [["railway_station_id", 2], ["updated_at", "2016-06-09 12:26:14.137894"], ["id", 4]]
+  [1m[36m (3.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mTrain Load (0.3ms)[0m  SELECT "trains".* FROM "trains" WHERE "trains"."railway_station_id" = ?  [["railway_station_id", 2]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to AddRailwayStationIdToTrains (20160609120113)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TEMPORARY TABLE "atrains" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "number" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "railway_station_id" integer) 
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "trains"[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "atrains" ("id","number","created_at","updated_at","railway_station_id") VALUES (1, 111, '2016-06-09 12:18:29.145110', '2016-06-09 12:21:03.131218', 2)
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "atrains" ("id","number","created_at","updated_at","railway_station_id") VALUES (2, 222, '2016-06-09 12:18:38.097367', '2016-06-09 12:18:38.097367', NULL)[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "atrains" ("id","number","created_at","updated_at","railway_station_id") VALUES (3, 333, '2016-06-09 12:24:10.098576', '2016-06-09 12:24:10.098576', 3)
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "atrains" ("id","number","created_at","updated_at","railway_station_id") VALUES (4, 333, '2016-06-09 12:25:31.001850', '2016-06-09 12:26:14.137894', 2)[0m
+  [1m[35m (0.3ms)[0m  DROP TABLE "trains"
+  [1m[36m (0.1ms)[0m  [1mCREATE TABLE "trains" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "number" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "atrains"
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "trains" ("id","number","created_at","updated_at") VALUES (1, 111, '2016-06-09 12:18:29.145110', '2016-06-09 12:21:03.131218')[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "trains" ("id","number","created_at","updated_at") VALUES (2, 222, '2016-06-09 12:18:38.097367', '2016-06-09 12:18:38.097367')
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "trains" ("id","number","created_at","updated_at") VALUES (3, 333, '2016-06-09 12:24:10.098576', '2016-06-09 12:24:10.098576')[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "trains" ("id","number","created_at","updated_at") VALUES (4, 333, '2016-06-09 12:25:31.001850', '2016-06-09 12:26:14.137894')
+  [1m[36m (0.2ms)[0m  [1mDROP TABLE "atrains"[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?  [["version", "20160609120113"]]
+  [1m[36m (3.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mTrain Load (0.3ms)[0m  [1mSELECT  "trains".* FROM "trains"  ORDER BY "trains"."id" ASC LIMIT 1[0m
+  [1m[35mRailwayStation Load (0.3ms)[0m  SELECT  "railway_stations".* FROM "railway_stations"  ORDER BY "railway_stations"."id" ASC LIMIT 1
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddRailwayStationIdToTrains (20160609120113)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.7ms)[0m  [1mALTER TABLE "trains" ADD "current_station_id" integer[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160609120113"]]
+  [1m[36m (4.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mTrain Load (0.2ms)[0m  [1mSELECT  "trains".* FROM "trains"  ORDER BY "trains"."id" ASC LIMIT 1[0m
+  [1m[35mRailwayStation Load (0.2ms)[0m  SELECT  "railway_stations".* FROM "railway_stations"  ORDER BY "railway_stations"."id" ASC LIMIT 1
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateStationsRoutes (20160614100038)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "stations_routes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "station_id" integer, "route_id" integer) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160614100038"]]
+  [1m[36m (41.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mRailwayStation Load (0.3ms)[0m  [1mSELECT  "railway_stations".* FROM "railway_stations"  ORDER BY "railway_stations"."id" ASC LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "routes" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Москва-Питер"], ["created_at", "2016-06-14 10:06:37.303211"], ["updated_at", "2016-06-14 10:06:37.303211"]]
+  [1m[35m (21.8ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateStationsRoutes (20160614100038)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  DROP TABLE "stations_routes"
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20160614100038"]]
+  [1m[35m (16.2ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateStationsRoutes (20160614100038)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "railway_stations_routes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "station_id" integer, "route_id" integer) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160614100038"]]
+  [1m[36m (3.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mRailwayStation Load (0.3ms)[0m  [1mSELECT  "railway_stations".* FROM "railway_stations"  ORDER BY "railway_stations"."id" ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "routes" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Москва-Питер"], ["created_at", "2016-06-14 10:08:02.801240"], ["updated_at", "2016-06-14 10:08:02.801240"]]
+  [1m[35m (4.9ms)[0m  commit transaction
+  [1m[36mRailwayStation Load (0.2ms)[0m  [1mSELECT  "railway_stations".* FROM "railway_stations"  ORDER BY "railway_stations"."id" ASC LIMIT 1[0m
+  [1m[35mRoute Load (0.5ms)[0m  SELECT "routes".* FROM "routes" INNER JOIN "railway_stations_routes" ON "routes"."id" = "railway_stations_routes"."route_id" WHERE "railway_stations_routes"."railway_station_id" = ?  [[nil, 2]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateStationsRoutes (20160614100038)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  DROP TABLE "railway_stations_routes"
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20160614100038"]]
+  [1m[35m (4.0ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateStationsRoutes (20160614100038)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "railway_stations_routes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "railway_station_id" integer, "route_id" integer) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160614100038"]]
+  [1m[36m (3.5ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mRailwayStation Load (0.3ms)[0m  [1mSELECT  "railway_stations".* FROM "railway_stations"  ORDER BY "railway_stations"."id" ASC LIMIT 1[0m
+  [1m[35mRoute Load (0.5ms)[0m  SELECT "routes".* FROM "routes" INNER JOIN "railway_stations_routes" ON "routes"."id" = "railway_stations_routes"."route_id" WHERE "railway_stations_routes"."railway_station_id" = ?  [["railway_station_id", 2]]
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "routes" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Москва-Питер"], ["created_at", "2016-06-14 10:09:10.042430"], ["updated_at", "2016-06-14 10:09:10.042430"]]
+  [1m[36m (3.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "railway_stations_routes" ("railway_station_id", "route_id") VALUES (?, ?)[0m  [["railway_station_id", 2], ["route_id", 10]]
+  [1m[35m (4.4ms)[0m  commit transaction
+  [1m[36mRailwayStation Load (0.4ms)[0m  [1mSELECT "railway_stations".* FROM "railway_stations" INNER JOIN "railway_stations_routes" ON "railway_stations"."id" = "railway_stations_routes"."railway_station_id" WHERE "railway_stations_routes"."route_id" = ?[0m  [["route_id", 10]]
+  [1m[36mRoute Load (0.1ms)[0m  [1mSELECT  "routes".* FROM "routes"  ORDER BY "routes"."id" ASC LIMIT 1[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mRailwayStation Load (0.3ms)[0m  [1mSELECT  "railway_stations".* FROM "railway_stations"  ORDER BY "railway_stations"."id" ASC LIMIT 1[0m
+  [1m[36mRailwayStation Load (0.2ms)[0m  [1mSELECT  "railway_stations".* FROM "railway_stations"  ORDER BY "railway_stations"."id" ASC LIMIT 1[0m
+  [1m[35mRailwayStation Load (0.2ms)[0m  SELECT  "railway_stations".* FROM "railway_stations"  ORDER BY "railway_stations"."id" ASC LIMIT 1
+  [1m[36mRoute Load (0.5ms)[0m  [1mSELECT "routes".* FROM "routes" INNER JOIN "railway_stations_routes" ON "routes"."id" = "railway_stations_routes"."route_id" WHERE "railway_stations_routes"."railway_station_id" = ?[0m  [["railway_station_id", 2]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateTickets (20160614113150)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateTickets (20160614113150)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "stations" ADD "first_station_id" integer[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateTickets (20160614113150)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "stations" ADD "first_station_id" integer[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateTickets (20160614113150)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateTickets (20160614113150)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "tickets" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "stations_id" integer, "first_station_id" integer, "last_station_id" integer, "users_id" integer, "trains_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160614113150"]]
+  [1m[36m (4.2ms)[0m  [1mcommit transaction[0m
+Migrating to CreateUsers (20160614113416)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160614113416"]]
+  [1m[36m (3.5ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "users" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Vasya"], ["created_at", "2016-06-14 12:01:39.172822"], ["updated_at", "2016-06-14 12:01:39.172822"]]
+  [1m[36m (14.5ms)[0m  [1mcommit transaction[0m
+  [1m[35mTicket Load (1.3ms)[0m  SELECT "tickets".* FROM "tickets" WHERE "tickets"."user_id" = ?  [[nil, 1]]
+  [1m[36m (1.0ms)[0m  [1mSELECT "tickets".id FROM "tickets" WHERE "tickets"."user_id" = ?[0m  [[nil, 1]]
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "tickets" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "azaza"], ["created_at", "2016-06-14 12:03:32.610631"], ["updated_at", "2016-06-14 12:03:32.610631"]]
+  [1m[35m (4.9ms)[0m  commit transaction
+  [1m[36m (1.1ms)[0m  [1mSELECT "tickets".id FROM "tickets" WHERE "tickets"."user_id" = ?[0m  [[nil, 1]]
+  [1m[35mRailwayStation Load (0.4ms)[0m  SELECT  "railway_stations".* FROM "railway_stations"  ORDER BY "railway_stations"."id" ASC LIMIT 1
+  [1m[36mTicket Load (1.2ms)[0m  [1mSELECT "tickets".* FROM "tickets" WHERE "tickets"."railway_station_id" = ?[0m  [[nil, 2]]
+  [1m[35m (1.0ms)[0m  SELECT "tickets".id FROM "tickets" WHERE "tickets"."railway_station_id" = ?  [[nil, 2]]
+  [1m[36mTicket Load (0.3ms)[0m  [1mSELECT  "tickets".* FROM "tickets"  ORDER BY "tickets"."id" ASC LIMIT 1[0m
+  [1m[35mTrain Load (0.3ms)[0m  SELECT  "trains".* FROM "trains"  ORDER BY "trains"."id" ASC LIMIT 1
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateUsers (20160614113416)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  DROP TABLE "users"
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20160614113416"]]
+  [1m[35m (16.1ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateTickets (20160614113150)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  DROP TABLE "tickets"
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20160614113150"]]
+  [1m[35m (3.4ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateTickets (20160614113150)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "tickets" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "stations_id" integer, "first_station_id" integer, "last_station_id" integer, "user_id" integer, "train_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160614113150"]]
+  [1m[36m (3.9ms)[0m  [1mcommit transaction[0m
+Migrating to CreateUsers (20160614113416)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160614113416"]]
+  [1m[36m (4.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "tickets" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "lalala"], ["created_at", "2016-06-14 12:27:37.966132"], ["updated_at", "2016-06-14 12:27:37.966132"]]
+  [1m[36m (3.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "vasia"], ["created_at", "2016-06-14 12:28:07.202877"], ["updated_at", "2016-06-14 12:28:07.202877"]]
+  [1m[35m (2.7ms)[0m  commit transaction
+  [1m[36mTicket Load (0.5ms)[0m  [1mSELECT "tickets".* FROM "tickets" WHERE "tickets"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[35m (0.4ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mUPDATE "tickets" SET "user_id" = ?, "updated_at" = ? WHERE "tickets"."id" = ?[0m  [["user_id", 1], ["updated_at", "2016-06-14 12:29:59.391728"], ["id", 1]]
+  [1m[35m (3.8ms)[0m  commit transaction
+  [1m[36mTrain Load (0.3ms)[0m  [1mSELECT  "trains".* FROM "trains"  ORDER BY "trains"."id" ASC LIMIT 1[0m
+  [1m[35mTrain Load (0.4ms)[0m  SELECT  "trains".* FROM "trains"  ORDER BY "trains"."id" ASC LIMIT 1
+  [1m[36mRailwayStation Load (0.4ms)[0m  [1mSELECT  "railway_stations".* FROM "railway_stations" WHERE "railway_stations"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mRailwayStation Load (0.3ms)[0m  SELECT  "railway_stations".* FROM "railway_stations"  ORDER BY "railway_stations"."id" ASC LIMIT 1
+  [1m[36mRailwayStation Load (0.1ms)[0m  [1mSELECT  "railway_stations".* FROM "railway_stations" WHERE "railway_stations"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mTrain Load (0.4ms)[0m  SELECT  "trains".* FROM "trains"  ORDER BY "trains"."id" ASC LIMIT 1
