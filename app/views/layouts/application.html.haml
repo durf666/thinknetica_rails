@@ -1,0 +1,12 @@
+!!!
+%html
+  %head
+    %title Ticketer
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+  %body
+    = yield
+  %footer
+    (с) 2015 Иван Иванов (подставьте ваше имя). Учебный проект в онлайн-школе 
+    %a{:href => "http://www.thinknetica.com"} Thinknetica

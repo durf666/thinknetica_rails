@@ -1,6 +1,18 @@
 %p#notice= notice
 %p
-  %strong Name:
+  %strong Название Маршрута:
   = @route.name
+%p
+  %strong Поезда на маршруте:
+%p
+  -if @route.trains.present?
+    - @route.trains.each do |train|
+      %tr
+        %td= train.number
+        %br
+  -else
+    %p
+      Поездов на маршруте нет
+  %end
 = link_to 'Редактировать', edit_route_path(@route)
 = link_to 'Назад', routes_path
