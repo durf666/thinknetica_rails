@@ -1,0 +1,12 @@
+%p#notice= notice
+%h1 Listing Railcars
+%table
+  %thead
+    %tr
+      %th Number
+      %th{:colspan => "3"}
+  %tbody
+    - @railcars.each do |railcar|
+      =render railcar
+%br/
+= link_to 'New Railcar', new_railcar_path

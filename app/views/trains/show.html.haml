@@ -1,0 +1,24 @@
+%p#notice= notice
+%p
+  %strong Номер:
+  = @train.number
+%p
+  %strong На станции:
+  - if @train.current_station.present?
+    = @train.current_station.name
+  - else
+    не указано
+%p
+  %strong На маршруте:
+  - if @train.route.present?
+    = @train.route.name
+  - else
+    не указано
+%p
+  %strong Кол-во пласкартных вагонов:
+
+
+
+= link_to 'Edit', edit_train_path(@train)
+|
+\#{link_to 'Back', trains_path}
