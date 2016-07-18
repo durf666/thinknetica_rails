@@ -10,6 +10,8 @@ class TrainsController < ApplicationController
   # GET /trains/1
   # GET /trains/1.json
   def show
+    @type_1 = @train.railcars.where(railcar_type: 1)
+    @type_2 = @train.railcars.where(railcar_type: 2)
   end
 
   # GET /trains/new
@@ -65,7 +67,7 @@ class TrainsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_train
-      @train = Train.find(params[:id])
+      @train = Train.includes(:railcars).find(params[:id])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.

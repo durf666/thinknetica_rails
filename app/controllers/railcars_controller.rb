@@ -10,14 +10,14 @@ class RailcarsController < ApplicationController
   end
 
   def show
-    
+
   end
 
   def create
     @railcar = Railcar.new(railcar_params)
 
     if @railcar.save
-      redirect_to @railcar, notice: 'Маршрут успешно создан.'
+      redirect_to @railcar, notice: 'Вагон успешно создан.'
     else
       render :new
     end

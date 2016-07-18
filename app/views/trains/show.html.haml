@@ -15,8 +15,21 @@
   - else
     не указано
 %p
+  %strong Кол-во купейных вагонов:
+  = @type_1.count
+  %ul
+    %li Количество верхних мест: 
+    = @train.seats_type_1.first
+    %li Количество нижних мест: 
+    = @train.seats_type_1.last
+%p
   %strong Кол-во пласкартных вагонов:
-
+  = @type_2.count
+  %ul
+    %li Количество верхних мест: 
+    = @train.seats_type_2.first
+    %li Количество нижних мест: 
+    = @train.seats_type_2.last
 
 
 = link_to 'Edit', edit_train_path(@train)
