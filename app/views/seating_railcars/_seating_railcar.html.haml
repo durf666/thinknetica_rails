@@ -1,0 +1,12 @@
+%tr
+  %td= seating_railcar.train.number
+  %td= seating_railcar.number
+  %td= seating_railcar.railcar_type.display_name
+  %td= 'X'
+  %td= 'X'
+  %td= 'X'
+  %td= 'X'
+  %td= seating_railcar.seating_seats
+  %td= link_to 'Show', seating_railcar
+  %td= link_to 'Edit', edit_seating_railcar_path(seating_railcar)
+  %td= link_to 'Destroy', seating_railcar, method: :delete, data: { confirm: 'Are you sure?' }

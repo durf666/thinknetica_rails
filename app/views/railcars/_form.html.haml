@@ -8,17 +8,34 @@
         - @railcar.errors.full_messages.each do |message|
           %li= message
   .field
-    = f.label :upper_seat_number
+    = f.label :number
     %br/
-    = f.text_field :upper_seat_number
+    = f.text_field :number
   .field
-    = f.label :lower_seat_number
+    = f.label :upper_seats
     %br/
-    = f.text_field :lower_seat_number
+    = f.text_field :upper_seats
+  .field
+    = f.label :lower_seats
+    %br/
+    = f.text_field :lower_seats
+  .field
+    = f.label :side_upper_seats
+    %br/
+    = f.text_field :side_upper_seats
+  .field
+    = f.label :side_lower_seats
+    %br/
+    = f.text_field :side_lower_seats
+  .field
+    = f.label :seating_seats
+    %br/
+    = f.text_field :seating_seats
+
   .field
     = f.label :railcar_type
     %br
-      = f.collection_select :railcar_type_id, RailcarType.all, :id, :railcar_type
+      = f.collection_select :railcar_type_id, RailcarType.all, :id, :display_name
   .field
     = f.label :train
     %br

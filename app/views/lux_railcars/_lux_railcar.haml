@@ -1,0 +1,12 @@
+%tr
+  %td= lux_railcar.train.number
+  %td= lux_railcar.number
+  %td= lux_railcar.railcar_type.display_name
+  %td= "X"
+  %td= lux_railcar.lower_seats
+  %td= "X"
+  %td= "X"
+  %td= "X"
+  %td= link_to 'Show', lux_railcar
+  %td= link_to 'Edit', edit_lux_railcar_path(lux_railcar)
+  %td= link_to 'Destroy', lux_railcar, method: :delete, data: { confirm: 'Are you sure?' }

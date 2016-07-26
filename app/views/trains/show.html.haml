@@ -23,13 +23,38 @@
     %li Количество нижних мест: 
     = @train.seats_type_1.last
 %p
-  %strong Кол-во пласкартных вагонов:
+  %strong Кол-во плацкартных вагонов:
   = @type_2.count
   %ul
     %li Количество верхних мест: 
     = @train.seats_type_2.first
     %li Количество нижних мест: 
+    = @train.seats_type_2[2]
+    %li Количество верхних боковых мест: 
+    = @train.seats_type_2[3]
+    %li Количество нижних бокоых мест: 
     = @train.seats_type_2.last
+%p
+  %strong Кол-во купейных вагонов:
+  = @type_3.count
+  %ul
+    %li Количество нижних мест: 
+    = @train.seats_type_3
+%p
+  %strong Кол-во купейных вагонов:
+  = @type_4.count
+  %ul
+    %li Количество сидячих мест: 
+    = @train.seats_type_4
+%p
+  %strong Вагоны, прицепленные к поезду
+  -if @train.sort_order
+    - @train.railcars.order(number: :desc).each do |railcar|
+      %li= link_to railcar.number, railcar
+  -else
+    - @train.railcars.each do |railcar|
+      %li= link_to railcar.number, railcar
+
 
 
 = link_to 'Edit', edit_train_path(@train)

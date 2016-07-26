@@ -1,0 +1,19 @@
+%p#notice= notice
+%p
+  %strong Номер вагона:
+  = @railcar.number
+  %end
+%p
+  %strong Количество сидячих мест в вагоне:
+  = @railcar.seating_seats
+  %end
+%p
+  %strong Тип Вагона:
+  = @railcar.railcar_type.display_name
+  %end
+%p
+  %strong Прицеплен к поезду:
+  = @railcar.train.number
+  %end
+= link_to 'Редактировать', edit_seating_railcar_path(@railcar)
+= link_to 'Назад', railcars_path

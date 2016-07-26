@@ -14,5 +14,18 @@
     %p
       Поездов на маршруте нет
   %end
-= link_to 'Редактировать', edit_route_path(@route)
-= link_to 'Назад', routes_path
+%p
+  %strong Станции, входящие в маршрут:
+%table
+  %thead
+    %tr
+      %th №
+      %th Название станции
+  %tbody
+    -@route.stations_on_route.each_with_index do |station, index|
+      %tr
+        %td= index+1
+        %td= station.name
+%p
+  = link_to 'Редактировать', edit_route_path(@route)
+  = link_to 'Назад', routes_path

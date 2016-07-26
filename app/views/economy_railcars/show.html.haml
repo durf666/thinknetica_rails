@@ -1,0 +1,31 @@
+%p#notice= notice
+%p
+  %strong Номер вагона:
+  = @railcar.number
+  %end
+%p
+  %strong Количество нижних мест в вагоне:
+  = @railcar.lower_seats
+  %end
+%p
+  %strong Количество верхних мест в вагоне:
+  = @railcar.upper_seats
+  %end
+%p
+  %strong Количество нижних боковых мест в вагоне:
+  = @railcar.side_lower_seats
+  %end
+%p
+  %strong Количество верхних боковых мест в вагоне:
+  = @railcar.side_upper_seats
+  %end
+%p
+  %strong Тип Вагона:
+  = @railcar.railcar_type.display_name
+  %end
+%p
+  %strong Прицеплен к поезду:
+  = @railcar.train.number
+  %end
+= link_to 'Редактировать', edit_economy_railcar_path(@railcar)
+= link_to 'Назад', railcars_path

@@ -1,0 +1,12 @@
+%tr
+  %td= economy_railcar.train.number
+  %td= economy_railcar.number
+  %td= economy_railcar.railcar_type.display_name
+  %td= economy_railcar.upper_seats
+  %td= economy_railcar.lower_seats
+  %td= economy_railcar.side_upper_seats
+  %td= economy_railcar.side_lower_seats
+  %td= 'X'
+  %td= link_to 'Show', economy_railcar
+  %td= link_to 'Edit', edit_economy_railcar_path(economy_railcar)
+  %td= link_to 'Destroy', economy_railcar, method: :delete, data: { confirm: 'Are you sure?' }

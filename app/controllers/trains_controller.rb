@@ -12,6 +12,8 @@ class TrainsController < ApplicationController
   def show
     @type_1 = @train.railcars.where(railcar_type: 1)
     @type_2 = @train.railcars.where(railcar_type: 2)
+    @type_3 = @train.railcars.where(railcar_type: 3)
+    @type_4 = @train.railcars.where(railcar_type: 4)
   end
 
   # GET /trains/new
@@ -72,6 +74,10 @@ class TrainsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def train_params
-      params.require(:train).permit(:number, :current_station_id, :route_id)
+      params.require(:train).permit(:number, :current_station_id, :route_id, :sort_order)
     end
+
+    # def railcars_counter(car_type, seat_type)
+    #   @train
+    # end
 end
