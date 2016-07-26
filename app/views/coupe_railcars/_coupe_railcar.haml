@@ -1,0 +1,12 @@
+%tr
+  %td= coupe_railcar.train.number
+  %td= coupe_railcar.number
+  %td= coupe_railcar.railcar_type.display_name
+  %td= coupe_railcar.upper_seats
+  %td= coupe_railcar.lower_seats
+  %td= 'X'
+  %td= 'X'
+  %td= 'X'
+  %td= link_to 'Show', coupe_railcar
+  %td= link_to 'Edit', edit_coupe_railcar_path(coupe_railcar)
+  %td= link_to 'Destroy', coupe_railcar, method: :delete, data: { confirm: 'Are you sure?' }

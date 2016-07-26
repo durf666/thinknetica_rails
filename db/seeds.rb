@@ -5,3 +5,15 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+RailcarType.create(name: "coupe_railcar", display_name: "Купейный")
+RailcarType.create(name: "economy_railcar", display_name: "Плацкартный")
+RailcarType.create(name: "lux_railcar", display_name: "СВ")
+RailcarType.create(name: "seating_railcar", display_name: "Сидячий")
+
+RailwayStation.create(name: "Москва")
+RailwayStation.create(name: "Воркута")
+RailwayStation.create(name: "Питер")
+
+Route.create(name: "Москва-Питер")
+Route.create(name: "Москва-Воркута")
+Route.create(name: "Питер-Воркута")

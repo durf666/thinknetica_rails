@@ -1,7 +1,12 @@
 %tr
-  %td= railcar.upper_seat_number
-  %td= railcar.lower_seat_number
-  %td= railcar.railcar_type.railcar_type
+  %td= railcar.train.number
+  %td= railcar.number
+  %td= railcar.railcar_type.display_name
+  %td= railcar.upper_seats
+  %td= railcar.lower_seats
+  %td= railcar.side_upper_seats
+  %td= railcar.side_lower_seats
+  %td= railcar.seating_seats
   %td= link_to 'Show', railcar
   %td= link_to 'Edit', edit_railcar_path(railcar)
   %td= link_to 'Destroy', railcar, method: :delete, data: { confirm: 'Are you sure?' }
